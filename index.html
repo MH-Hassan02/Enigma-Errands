@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma Errands - Unraveling Convenience</title>
+    <link rel="icon" href="./images/Tab Image.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="loginContainer">
+            <div class="imageLogin">
+            </div>
+            <div class="loginMain">
+                <h1>ENIGMA - ERRANDS</h1>
+                <input type="text" name="" id="email" placeholder="Email" class="loginInput">
+                <input type="password" id="password" placeholder="Password" class="loginInput" onkeydown="if(event.key === 'Enter') loginFunc()">
+                <input type="checkbox" class="checkbox"> 
+                <label for="" >Remember me</label>
+                <label for="" id="error" style="margin-top: 1%; margin-bottom: 0; color: red; display: none;">* Invalid Email/Password</label>
+                <button onclick="loginFunc()">LOGIN</button>
+                <h4>Forgot Password?</h4>
+                <h3><i>Don't have an account? <a href="./signup.html">Sign-up Now</a></i></h3>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="auth.js"></script>
+</html>

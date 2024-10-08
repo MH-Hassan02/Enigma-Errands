@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enigma Errands - Unraveling Convenience</title>
+    <link rel="icon" href="./images/Tab Image.png" type="image/x-icon">
+    <link rel="stylesheet" href="signupStyle.css">
+</head>
+<body>
+    <div class="mainContainer">
+        <div class="mainContainer">
+            <div class="signupContainer">
+                <div class="imagesignup">
+                </div>
+                <div class="signupMain">
+                <h1>ENIGMA - ERRANDS</h1>
+                    <label for="">First Name:</label>
+                    <input id="fname" type="text" placeholder="First Name" class="signupInput">
+
+                    <label for="">Last Name:</label>
+                    <input id="lname" type="text" placeholder="Last Name" class="signupInput">
+
+                    <label for="">Email:</label>
+                    <input id="email" type="text" name="" id="email" placeholder="Email" class="signupInput">
+
+                    <label for="">Password:</label>
+                    <input id="password" type="password" placeholder="Password" class="signupInput" id="password" onkeydown="if(event.key === 'Enter') signupFunc()">
+
+                    <label for="" id="error" style="margin-top: 1%; margin-bottom: 0; color: red; display: none;">* Fill all the Required Fields</label>
+                    <button onclick="signupFunc()">SIGNUP</button>
+                    <h3><i>Already Registered? <a href="./index.html">Login Instead</a></i></h3>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script type="module" src="auth.js"></script>
+</html>
